@@ -1,0 +1,253 @@
+%
+%
+% Author: Omar Muhammad Gaber
+% Last Modify: 16/5/2023
+% Email: omarmgaber37@gmail.com	
+% LinkedIn: https://www.linkedin.com/in/omarmgaber 
+% GitHub: https://github.com/OmarMGaber 
+%
+%
+
+\documentclass[a4paper,12pt]{article}
+
+% Packages for formatting and layout
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black]{hyperref}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{multicol}
+%\usepackage{newpxtext}
+%\usepackage{ebgaramond}
+%\setmainfont{Times New Roman}
+\setmainfont{Arial}
+\linespread{1.2}
+
+% Custom commands for section formatting
+\titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+
+% Custom Projects title
+\newcommand{\projectTitle}[3]{%
+    \subsection{\href{#2}{#1 \includegraphics[height=11pt]{images/github-logo.png}}\textmd{\hfill \normalsize{#3}}}
+}
+
+\newcommand{\col}[3]{		
+	\begin{multicols}{3}
+		#1
+
+		#2
+
+		#3
+	\end{multicols}
+	\vspace{-7mm}
+}
+
+% Custom GitHub Link
+\newcommand{\github}[1]{
+	\href{\includegraphics[height=11pt]{images/github-logo.png}\normal\textit\textmd{Source Code}{#1}} 
+}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+\begin{document}
+
+	% Personal information
+	\begin{center}
+		\Huge \textbf{Omar Muhammad Gaber} \\ \small{2nd Level Computer Science Student}
+	\end{center}
+
+	\begin{flushleft}
+		\begin{center}
+			\footnotesize
+			{
+				| Alexandria, Egypt |
+				(+20)12-0544-9403 |
+				\href{mailto:omarmgaber37@gmail.com}{\includegraphics[height=8pt]{images/gmail-logo.png}  omarmgaber37@gmail.com} |			
+				\href{https://www.linkedin.com/in/omarmgaber/}{\includegraphics[height=8pt]{images/linkedIn-logo.png} omarmgaber} |
+				\href{https://github.com/OmarMGaber}{\includegraphics[height=9pt]{images/github-logo.png} OmarMGaber} |
+			}
+		\end{center}
+	\end{flushleft}
+
+	% Summary section
+	\section{Summary}
+			
+		\textit{\\}I am a highly motivated Computer Science student currently pursuing my second level at the Faculty of Science, Alexandria University, I have been consistently driven with projects to my second level and beyond. Through individual efforts and group collaborations, I have worked on tasks that included the development of front-end, back-end engineering, and designing ERD and UML diagrams, as well as selecting proper architectural designs. My knowledge of fundamental computer science concepts such as Object-Oriented Programming, Data Structures, and Algorithms has greatly contributed to my projects.\\
+
+		In addition to my technical skills, I have good knowledge of relational databases, computer networks, and version control using Git. I am driven by a strong desire to contribute my skills and expertise to a collaborative team environment. I am dedicated to knowledge sharing and continuous learning from my peers, always seeking opportunities for personal and professional growth.\\
+
+	
+ 		I am driven to contribute my skills and expertise to a cooperative team. I am eager to share my knowledge and learn from others in the process.  I have a strong passion for problem analysis and solving, and I stay current on updated technologies and innovations. With a solution-oriented attitude, I come to tasks with a 'Get Things Done' outlook. My commitment to achieving results and delivering top-notch outcomes is unwavering.\\
+
+			
+		During my education, I helped a lot of students from different levels in course registration and organized the ways of communication of my whole batch. I have also taken on leadership roles in various projects, fostering creativity and introducing innovative ideas to the teams. Moreover, I am passionate about sharing my knowledge and expertise to elevate the overall skill set of the team. Furthermore, I have a solid foundation in theoretical computer science subjects, including Theory of Computations, Concepts of Programming Languages, Number Theory, Discrete Structures, Data Structures, and Algorithms. This knowledge strengthens my problem-solving abilities and equips me with a comprehensive understanding of the underlying principles.
+
+
+	% Education section
+	\section{Education}
+		\subsection{Faculty of Science, Alexandria University \hfill \small{Alexandria, Egypt}}
+			\vspace{-3mm}
+			\textit{Bachelor of Science in Computer Science and Mathematical Statistics} \hfill \small\textit{Oct 2021 - Jun 2025}\\
+			
+			\textit{\textbf{Current CGPA: } 3.15}
+
+			\textit{\textbf{Activities:}}
+			\begin{itemize}
+					 \small{\item Had made a user-friendly simple map to make it easier to read and choose courses from the courses catalog provided by the faculty administration and, to make the study plan clear for students which helped alot of students in registration every semester to know what they can register this semester.
+						\scriptsize{to view the map \href{https://drive.google.com/file/d/1Z6P57HZftHR9ng1x2sYMtcG8yeUXJsrg/view?usp=sharing}{\textbf{click here}}}}
+						
+					 \small{\item Managed to be my batch coordinator for 2 semesters in a row helping them in registering courses and getting resources and organizing it, also organizing some of the course's communication groups, and creating the main batch communication group.}
+						\item{Currently participated as a contestant in a team in the Alex-Sci ICPC community to join the ECPC contest this year 2023- 2024}
+			\end{itemize}
+
+			
+
+
+
+	\section{Tools \& Technical Skills}
+		
+		\col{Java}{C}{C++}
+		\col{Data Structures}{CSS/SASS}{HTML}
+		\col{Rust}{Actix-Web}{JavaScript}
+		\col{Linux}{C\#}{WebSockets}
+		\col{Algorithms}{JavaFX}{Golang}
+		\col{SQLite}{MySQL}{PHP}
+		\col{\footnotesize{Object Oriented Programming}}{\normalsize {Design Patterns}}{OpenGL}
+		\col{MongoDB}{Haskell}{REST APIs}
+		\col{Relational Databases}{Git}{Scheme}
+		\col{Adobe XD}{User Interface}{\LaTeX}
+		\col{}{GitHub}{Functional Programming}
+		\textit{\\}
+
+	% Projects section
+	\section{Projects}
+
+		 \subsection{{Polynomial Calculator}\textmd{\hfill \normalsize{Java - JavaFX}}}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{May 2023 - In Progress}\\
+			Data Structures Course
+			\begin{itemize}
+				\item{\textbf{Description:} This project aims to demonstrate proficiency in data structures problem-solving by creating a practical tool for manipulating polynomials, The project involves creating a Polynomial Calculator based on the LinkedList data structure. 
+
+					Users will be able to input polynomials and perform operations on them, including addition, subtraction, multiplication, and evaluation.
+					
+					The LinkedList data structure will be used to efficiently store and manipulate polynomial terms. Each term, consisting of a coefficient and an exponent, will be stored as a node in the LinkedList. In this way, polynomials of different degrees can be resized and manipulated easily.
+					
+					It will handle common errors like division by zero or invalid input by providing a user-friendly interface for inputting polynomial equations, simplifying expressions, and performing arithmetic operations. }
+			\end{itemize}	
+
+	 	\subsection{{Java Drawing Battle}\textmd{\hfill \normalsize{Java - JavaFX}}}	
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{May 2023 - In Progress}\\
+			Advanced Programming Course
+			\begin{itemize}
+				\item{\textbf{Description: }This project involved creating an interactive whiteboard game using Java and JavaFX. The goal was to develop a platform where multiple users could collaborate and draw together.
+
+Using Java and JavaFX, I will design an intuitive interface that allowed participants to express their creativity through drawing and sketching. The application featured real-time synchronization, ensuring that all users could see each other's drawings in real-time.
+
+In order to enhance the user experience, I implemented tools such as brush styles, color selection, and an eraser.}
+			\end{itemize}	
+
+		\projectTitle{Turing Machine Simulator}{https://github.com/OmarMGaber/Turing-Machine-Simulator}{Java}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{May 2023 - May 2023}\\
+			Theory of Computation Course
+			\begin{itemize}													% was created as part of the Theory of Computations project.			
+				\item{\textbf{Description: }A simple Turing Machine Simulator, where users can enter the number of states, machine language symbols, transition functions, and the string they want to oper	ate on.
+
+The purpose of this project is to provide an easy-to-use tool for simulating Turing Machines, which are essential concepts in computer science theory. To gain a deeper understanding of Turing Machines, users can customize machine configurations and input strings in the simulator.
+
+Using the simulator, users can observe the step-by-step execution of the Turing Machine, track state changes, and see how the input string is altered as the machine processes it. and finally gets the final string(tape) after the TM operations. }
+			\end{itemize}
+	
+		\projectTitle{Lemma Chat Application}{https://github.com/OmarMGaber/Lemma-Chat-App}{Rust - Actix-web - \small{HTML/CSS} - JavaScript - MongoDB}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{Mar 2023 - May 2023}\\
+			Concepts of Programming Languages Course
+			\begin{itemize}
+				\item{\textbf{Objectives: } \subitem{The objectives of this application is to allow users send and receive messages
+						in real-time, create channels and groups, participate in group conversations, and
+						provide real-time video and voice calls, Which will make the application more effective
+						and helpful for educational purposes and managing projects. Also support
+						multimedia content such as images, videos, and audio files. The application is
+						capable of handling a large number of requests from multiple users due to Rust’s
+						high performance and concurrency \scriptsize{also the full app proposal is provided \href{https://github.com/OmarMGaber/Rust-Chat-Application-Proposal}{\textbf{here}}} }}
+				\item{
+					\textbf{Features: }
+					\subitem{1. User authentication: Users will have to register and log in to use the application.}
+					\subitem{2. Private and group chat.} 
+					\subitem{3. Channels.}
+					\subitem{4. Images and files sharing.}
+					\subitem{5. Push notifications for new messages.}
+					\subitem{6. Message history.}
+					\subitem{7. Ability to search messages and contacts.}
+					\subitem{8. Ability to create and manage groups and channels.}
+				}
+			\end{itemize}
+		
+		\projectTitle{Expression Evaluator and Converter}{https://github.com/OmarMGaber/Turing-Machine-Simulator}{Java - JavaFX}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{Apr 2023 - May 2023}\\
+			Data Structures Course
+			\begin{itemize}
+				\item{\textbf{Description: }The project allows users to input mathematical expressions and perform various operations on them.
+
+The project is a direct application on the stack data structure, with the stack the program can convert expressions between different notation types, such as prefix, infix, and postfix. This flexibility allows users to work with expressions in their preferred format.
+also, the project provides the capability to evaluate expressions in any notation type.
+
+To ensure a smooth user experience, the project includes error handling mechanisms for the most comman errors. These mechanisms help detect and handle errors that may occur during expression evaluation and conversion. }
+			\end{itemize}	
+
+		\projectTitle{The Lost Girl}{https://github.com/OmarMGaber/TheLostGirl}{Golang}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{Apr 2023 - Apr 2023}\\
+			Concepts of Programming Languages Course
+			\begin{itemize}
+				\item{\textbf{Description: } A very simple GoLang TCP server implementation applying server client model, where the users type the location where they found the lost girl and the server automatically closes when a location is repeated certain number of times.}
+			\end{itemize}
+
+		\projectTitle{RSA Algorithm Key Generator}{https://github.com/OmarMGaber/RSA-Implementation}{Java}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{May 2023 - May 2023}\\
+			Discrete Structures Course
+			\begin{itemize}
+				\item{\textbf{Description: }An RSA algorithm key generator was implemented to generate encryption and decryption keys based on two upper limits for prime numbers, "p" and "q," and a message.
+
+In addition to generating the keys, the program encrypted the user's message using the RSA algorithm and displayed the encrypted result, as well as providing the ability to decrypt the encrypted message.
+
+Discrete Structures concepts like cryptography and number theory were demonstrated in this project.}
+			\end{itemize}	
+	
+		 \subsection{{Department of Math \& CS website}\textmd{\hfill \normalsize{HTML/CSS - JavaScript - PHP - MySQL}}}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{Dec 2022 - Jan 2023}\\
+			Netwrok and Internet Programming Course
+			\begin{itemize}
+				\item{\textbf{Description: }The main purpose of this website is to provide students, researchers, and other interested parties with information about the department, its faculty members, courses, research activities, and other related topics.
+
+
+HTML, CSS, and JavaScript are used to develop the website's user interface, which adapts to various screen sizes and devices thanks to its modern design. In addition to dropdown menus, image sliders, and navigation bars, JavaScript is used to add interactivity and dynamic elements to the website.
+
+Users' authentication and data validation are handled by PHP, while course schedules and exam schedules are stored and retrieved by MySQL.}
+			\end{itemize}
+		
+		 \subsection{{College Management System}\textmd{\hfill \normalsize{Java - JavaFX - SQLite}}}
+			\vspace{-3mm}
+			A 1st year CS project \hfill \small\textit{Jan 2023 - Jan 2023}\\
+			Object-Oriented Programming Course
+			\begin{itemize}
+				\item{\textbf{Description: }The College Management System software application is designed to manage and automate the daily operations of a college or university. College administration is covered by this comprehensive system, which includes admissions, student information management, faculty information management, course management, examination management, and fee management. }
+			\end{itemize}	
+
+	\section{Languages}
+		\subsection{\normalsize{English: \textmd\small{Intermediate proficiency}}}
+		\subsection{\normalsize{Arabic: \textmd\small{Native language}}}	
+
+\end{document}
